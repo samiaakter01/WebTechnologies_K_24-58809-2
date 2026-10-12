@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>University Coding Club</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <h1>University Coding Club</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#registration">Registration</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Our Club</h2>
+
+        <p>
+            Welcome to the University Coding Club!
+            We help students learn programming, solve problems,
+            and work together on coding projects.
+        </p>
+
+        <img src="coding-club.png" alt="University Coding Club Logo">
+    </section>
+
+    <!-- Weekly Schedule -->
+    <section id="schedule">
+        <h2>Weekly Schedule</h2>
+
+        <table>
+            <tr>
+                <th colspan="3">Coding Club Activities</th>
+            </tr>
+
+            <tr>
+                <th>Day</th>
+                <th>Activity</th>
+                <th>Time</th>
+            </tr>
+
+            <tr>
+                <td>Sunday</td>
+                <td>HTML and CSS</td>
+                <td>10:00 AM</td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td>Programming Practice</td>
+                <td>12:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td>Problem Solving</td>
+                <td>2:00 PM</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="registration">
+        <h2>Join Our Club</h2>
+
+        <form method="post" action="#registration">
+
+            <fieldset>
+                <legend>Student Registration</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <br><br>
+
+                <label>Gender:</label>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <br><br>
+
+                <label for="department">Department:</label>
+
+                <select id="department" name="department">
+                    <option value="cse">Computer Science</option>
+                    <option value="eee">Electrical Engineering</option>
+                    <option value="bba">Business Administration</option>
+                </select>
+                <br><br>
+
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+
+            </fieldset>
+
+        </form>
+    </section>
+
+    <!-- University Website -->
+    <footer>
+        <p>
+            Visit our university:
+            <a href="https://www.aiub.edu" target="_blank" rel="noopener noreferrer">
+                AIUB Official Website
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
